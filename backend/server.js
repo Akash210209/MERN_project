@@ -9,7 +9,7 @@ const authRoutes = require('./routes/auth'); // Import authentication routes
 
 dotenv.config();
 const app = express();
-console.log(process.MONGO_URI,'testing_URL')
+console.log(process.env.MONGO_URI,'testing_URL')
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON request bodies
